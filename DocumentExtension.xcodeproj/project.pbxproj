@@ -12,7 +12,46 @@
 		DC3819B21F8F9C8800046EE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3819B01F8F9C8800046EE2 /* Main.storyboard */; };
 		DC3819B41F8F9C8800046EE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3819B31F8F9C8800046EE2 /* Assets.xcassets */; };
 		DC3819B71F8F9C8800046EE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3819B51F8F9C8800046EE2 /* LaunchScreen.storyboard */; };
+		DC3819C71F8F9DC400046EE2 /* DocumentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3819C61F8F9DC400046EE2 /* DocumentPickerViewController.swift */; };
+		DC3819CA1F8F9DC400046EE2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3819C81F8F9DC400046EE2 /* MainInterface.storyboard */; };
+		DC3819D51F8F9DC500046EE2 /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3819D41F8F9DC500046EE2 /* FileProvider.swift */; };
+		DC3819D91F8F9DC500046EE2 /* DocumentProviderExFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC3819D01F8F9DC500046EE2 /* DocumentProviderExFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC3819DC1F8F9DC500046EE2 /* DocumentProviderEx.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC3819C21F8F9DC400046EE2 /* DocumentProviderEx.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC62E1A71F9092B600C373DC /* entry-points.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC62E1A61F9092B600C373DC /* entry-points.txt */; };
+		DC62E1A81F9095C100C373DC /* entry-points.txt in Resources */ = {isa = PBXBuildFile; fileRef = DC62E1A61F9092B600C373DC /* entry-points.txt */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC3819D71F8F9DC500046EE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC3819A11F8F9C8700046EE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3819CF1F8F9DC500046EE2;
+			remoteInfo = DocumentProviderExFileProvider;
+		};
+		DC3819DA1F8F9DC500046EE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC3819A11F8F9C8700046EE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3819C11F8F9DC400046EE2;
+			remoteInfo = DocumentProviderEx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC3819E31F8F9DC500046EE2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DC3819D91F8F9DC500046EE2 /* DocumentProviderExFileProvider.appex in Embed App Extensions */,
+				DC3819DC1F8F9DC500046EE2 /* DocumentProviderEx.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC3819A91F8F9C8800046EE2 /* DocumentExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DocumentExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +61,35 @@
 		DC3819B31F8F9C8800046EE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC3819B61F8F9C8800046EE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC3819B81F8F9C8800046EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3819C21F8F9DC400046EE2 /* DocumentProviderEx.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocumentProviderEx.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3819C51F8F9DC400046EE2 /* DocumentProviderEx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DocumentProviderEx.entitlements; sourceTree = "<group>"; };
+		DC3819C61F8F9DC400046EE2 /* DocumentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerViewController.swift; sourceTree = "<group>"; };
+		DC3819C91F8F9DC400046EE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DC3819CB1F8F9DC400046EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3819D01F8F9DC500046EE2 /* DocumentProviderExFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocumentProviderExFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC3819D31F8F9DC500046EE2 /* DocumentProviderExFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DocumentProviderExFileProvider.entitlements; sourceTree = "<group>"; };
+		DC3819D41F8F9DC500046EE2 /* FileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProvider.swift; sourceTree = "<group>"; };
+		DC3819D61F8F9DC500046EE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3819E41F8F9EB600046EE2 /* DocumentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DocumentExtension.entitlements; sourceTree = "<group>"; };
+		DC62E1A61F9092B600C373DC /* entry-points.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "entry-points.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DC3819A61F8F9C8800046EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3819BF1F8F9DC400046EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3819CD1F8F9DC500046EE2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,7 +102,10 @@
 		DC3819A01F8F9C8700046EE2 = {
 			isa = PBXGroup;
 			children = (
+				DC62E1A61F9092B600C373DC /* entry-points.txt */,
 				DC3819AB1F8F9C8800046EE2 /* DocumentExtension */,
+				DC3819C31F8F9DC400046EE2 /* DocumentProviderEx */,
+				DC3819D11F8F9DC500046EE2 /* DocumentProviderExFileProvider */,
 				DC3819AA1F8F9C8800046EE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				DC3819A91F8F9C8800046EE2 /* DocumentExtension.app */,
+				DC3819C21F8F9DC400046EE2 /* DocumentProviderEx.appex */,
+				DC3819D01F8F9DC500046EE2 /* DocumentProviderExFileProvider.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +123,7 @@
 		DC3819AB1F8F9C8800046EE2 /* DocumentExtension */ = {
 			isa = PBXGroup;
 			children = (
+				DC3819E41F8F9EB600046EE2 /* DocumentExtension.entitlements */,
 				DC3819AC1F8F9C8800046EE2 /* AppDelegate.swift */,
 				DC3819AE1F8F9C8800046EE2 /* ViewController.swift */,
 				DC3819B01F8F9C8800046EE2 /* Main.storyboard */,
@@ -62,6 +132,43 @@
 				DC3819B81F8F9C8800046EE2 /* Info.plist */,
 			);
 			path = DocumentExtension;
+			sourceTree = "<group>";
+		};
+		DC3819C31F8F9DC400046EE2 /* DocumentProviderEx */ = {
+			isa = PBXGroup;
+			children = (
+				DC3819C61F8F9DC400046EE2 /* DocumentPickerViewController.swift */,
+				DC3819C81F8F9DC400046EE2 /* MainInterface.storyboard */,
+				DC3819CB1F8F9DC400046EE2 /* Info.plist */,
+				DC3819C41F8F9DC400046EE2 /* Supporting Files */,
+			);
+			path = DocumentProviderEx;
+			sourceTree = "<group>";
+		};
+		DC3819C41F8F9DC400046EE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC3819C51F8F9DC400046EE2 /* DocumentProviderEx.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC3819D11F8F9DC500046EE2 /* DocumentProviderExFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				DC3819D41F8F9DC500046EE2 /* FileProvider.swift */,
+				DC3819D61F8F9DC500046EE2 /* Info.plist */,
+				DC3819D21F8F9DC500046EE2 /* Supporting Files */,
+			);
+			path = DocumentProviderExFileProvider;
+			sourceTree = "<group>";
+		};
+		DC3819D21F8F9DC500046EE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC3819D31F8F9DC500046EE2 /* DocumentProviderExFileProvider.entitlements */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +181,52 @@
 				DC3819A51F8F9C8800046EE2 /* Sources */,
 				DC3819A61F8F9C8800046EE2 /* Frameworks */,
 				DC3819A71F8F9C8800046EE2 /* Resources */,
+				DC3819E31F8F9DC500046EE2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DC3819D81F8F9DC500046EE2 /* PBXTargetDependency */,
+				DC3819DB1F8F9DC500046EE2 /* PBXTargetDependency */,
 			);
 			name = DocumentExtension;
 			productName = DocumentExtension;
 			productReference = DC3819A91F8F9C8800046EE2 /* DocumentExtension.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DC3819C11F8F9DC400046EE2 /* DocumentProviderEx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3819E01F8F9DC500046EE2 /* Build configuration list for PBXNativeTarget "DocumentProviderEx" */;
+			buildPhases = (
+				DC3819BE1F8F9DC400046EE2 /* Sources */,
+				DC3819BF1F8F9DC400046EE2 /* Frameworks */,
+				DC3819C01F8F9DC400046EE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentProviderEx;
+			productName = DocumentProviderEx;
+			productReference = DC3819C21F8F9DC400046EE2 /* DocumentProviderEx.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DC3819CF1F8F9DC500046EE2 /* DocumentProviderExFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC3819DD1F8F9DC500046EE2 /* Build configuration list for PBXNativeTarget "DocumentProviderExFileProvider" */;
+			buildPhases = (
+				DC3819CC1F8F9DC500046EE2 /* Sources */,
+				DC3819CD1F8F9DC500046EE2 /* Frameworks */,
+				DC3819CE1F8F9DC500046EE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentProviderExFileProvider;
+			productName = DocumentProviderExFileProvider;
+			productReference = DC3819D01F8F9DC500046EE2 /* DocumentProviderExFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +239,22 @@
 				TargetAttributes = {
 					DC3819A81F8F9C8800046EE2 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 83RTEDA88K;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					DC3819C11F8F9DC400046EE2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 83RTEDA88K;
+						ProvisioningStyle = Automatic;
+					};
+					DC3819CF1F8F9DC500046EE2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 83RTEDA88K;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -113,6 +273,8 @@
 			projectRoot = "";
 			targets = (
 				DC3819A81F8F9C8800046EE2 /* DocumentExtension */,
+				DC3819C11F8F9DC400046EE2 /* DocumentProviderEx */,
+				DC3819CF1F8F9DC500046EE2 /* DocumentProviderExFileProvider */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +286,24 @@
 			files = (
 				DC3819B71F8F9C8800046EE2 /* LaunchScreen.storyboard in Resources */,
 				DC3819B41F8F9C8800046EE2 /* Assets.xcassets in Resources */,
+				DC62E1A71F9092B600C373DC /* entry-points.txt in Resources */,
 				DC3819B21F8F9C8800046EE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3819C01F8F9DC400046EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC62E1A81F9095C100C373DC /* entry-points.txt in Resources */,
+				DC3819CA1F8F9DC400046EE2 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3819CE1F8F9DC500046EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +319,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DC3819BE1F8F9DC400046EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3819C71F8F9DC400046EE2 /* DocumentPickerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC3819CC1F8F9DC500046EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3819D51F8F9DC500046EE2 /* FileProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC3819D81F8F9DC500046EE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC3819CF1F8F9DC500046EE2 /* DocumentProviderExFileProvider */;
+			targetProxy = DC3819D71F8F9DC500046EE2 /* PBXContainerItemProxy */;
+		};
+		DC3819DB1F8F9DC500046EE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC3819C11F8F9DC400046EE2 /* DocumentProviderEx */;
+			targetProxy = DC3819DA1F8F9DC500046EE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC3819B01F8F9C8800046EE2 /* Main.storyboard */ = {
@@ -157,6 +365,14 @@
 				DC3819B61F8F9C8800046EE2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC3819C81F8F9DC400046EE2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC3819C91F8F9DC400046EE2 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -260,7 +476,10 @@
 		DC3819BC1F8F9C8800046EE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DocumentExtension/DocumentExtension.entitlements;
+				DEVELOPMENT_TEAM = 83RTEDA88K;
 				INFOPLIST_FILE = DocumentExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.DocumentExtension;
@@ -272,11 +491,70 @@
 		DC3819BD1F8F9C8800046EE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DocumentExtension/DocumentExtension.entitlements;
+				DEVELOPMENT_TEAM = 83RTEDA88K;
 				INFOPLIST_FILE = DocumentExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.DocumentExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DC3819DE1F8F9DC500046EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentProviderExFileProvider/DocumentProviderExFileProvider.entitlements;
+				DEVELOPMENT_TEAM = 83RTEDA88K;
+				INFOPLIST_FILE = DocumentProviderExFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.DocumentExtension.DocumentProviderExFileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC3819DF1F8F9DC500046EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentProviderExFileProvider/DocumentProviderExFileProvider.entitlements;
+				DEVELOPMENT_TEAM = 83RTEDA88K;
+				INFOPLIST_FILE = DocumentProviderExFileProvider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.DocumentExtension.DocumentProviderExFileProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DC3819E11F8F9DC500046EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentProviderEx/DocumentProviderEx.entitlements;
+				DEVELOPMENT_TEAM = 83RTEDA88K;
+				INFOPLIST_FILE = DocumentProviderEx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.DocumentExtension.DocumentProviderEx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC3819E21F8F9DC500046EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = DocumentProviderEx/DocumentProviderEx.entitlements;
+				DEVELOPMENT_TEAM = 83RTEDA88K;
+				INFOPLIST_FILE = DocumentProviderEx/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.test.DocumentExtension.DocumentProviderEx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -300,6 +578,25 @@
 				DC3819BD1F8F9C8800046EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC3819DD1F8F9DC500046EE2 /* Build configuration list for PBXNativeTarget "DocumentProviderExFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3819DE1F8F9DC500046EE2 /* Debug */,
+				DC3819DF1F8F9DC500046EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC3819E01F8F9DC500046EE2 /* Build configuration list for PBXNativeTarget "DocumentProviderEx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC3819E11F8F9DC500046EE2 /* Debug */,
+				DC3819E21F8F9DC500046EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
