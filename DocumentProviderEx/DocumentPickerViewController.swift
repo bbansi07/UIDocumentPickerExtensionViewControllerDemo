@@ -9,32 +9,23 @@
 import UIKit
 
 class DocumentPickerViewController: UIDocumentPickerExtensionViewController {
-    var fileCoordinator: NSFileCoordinator = {
-        let fileCoordinator = NSFileCoordinator()
-        // fileCoordinator.purposeIdentifier = self.providerIdentifier
-        return fileCoordinator
-    }()
-    var url : URL? = nil
+
     let appGroupIdentifier = "group.com.demo.test.DocumentExtension"
     
     @IBAction func openDocument(_ sender: AnyObject?) {
         
-        url = Bundle.main.url(forResource: "entry-points", withExtension: "txt")
-        //Bundle.main.path(forResource: "entry-points", ofType: "txt")!
+       let url = Bundle.main.url(forResource: "entry-points", withExtension: "txt")
         let documentURL = self.documentStorageURL!.appendingPathComponent("entry-points.txt")
         print("document url is \(documentURL)")
         // TODO: if you do not have a corresponding file provider, you must ensure that the URL returned here is backed by a file
         
-        //  FileManager.default.copyItem(atPath: URL(fileURLWithPath:url!.absoluteString.replacingOccurrences(of: "file://", with: "")), toPath:destinationURL)
-        var destinationURL = documentURL//self.appGroupContainerURL()?.appendingPathComponent("entry-points.txt")  //NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first
-        
         do {
             if FileManager.default.fileExists(atPath: documentURL.absoluteString.replacingOccurrences(of: "file://", with: "")){
-                try?  FileManager.default.removeItem(at: destinationURL)
+                try?  FileManager.default.removeItem(at: documentURL)
                 
             }
             
-            try FileManager.default.copyItem(at: (self.url!), to: documentURL)
+            try FileManager.default.copyItem(at: url!, to: documentURL)
             self.dismissGrantingAccess(to: documentURL)
             
         } catch {
